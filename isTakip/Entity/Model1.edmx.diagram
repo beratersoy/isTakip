@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="951cda70e3aa4aee8f6b962084d688ec" Name="Diagram1">
+        <EntityTypeShape EntityType="İsTakipModel.Admin" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="İsTakipModel.Departmanlar" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="İsTakipModel.Firmalar" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="İsTakipModel.GorevDetaylar" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="İsTakipModel.Gorevler" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="İsTakipModel.MalzemeGrubu" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="İsTakipModel.Malzemeler" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="İsTakipModel.MalzemeMarkaları" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="İsTakipModel.Personel" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="İsTakipModel.FK_Personel_Departmanlar" ManuallyRouted="false" />
+        <AssociationConnector Association="İsTakipModel.FK_GorevDetaylar_Gorevler" ManuallyRouted="false" />
+        <AssociationConnector Association="İsTakipModel.FK_Gorevler_Personel" ManuallyRouted="false" />
+        <AssociationConnector Association="İsTakipModel.FK_Gorevler_Personel1" ManuallyRouted="false" />
+        <AssociationConnector Association="İsTakipModel.FK_Gorevler_Personel2" ManuallyRouted="false" />
+        <AssociationConnector Association="İsTakipModel.FK_Malzemeler_MalzemeGrubu" ManuallyRouted="false" />
+        <AssociationConnector Association="İsTakipModel.FK_Malzemeler_MalzemeMarkaları" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="İsTakipModel.Cagrilar" Width="1.5" PointX="10" PointY="5" />
+        <AssociationConnector Association="İsTakipModel.FK_Cagrilar_Firmalar" />
+        <EntityTypeShape EntityType="İsTakipModel.CagriDetay" Width="1.5" PointX="12.25" PointY="5.25" />
+        <EntityTypeShape EntityType="İsTakipModel.Mesajlar" Width="1.5" PointX="10" PointY="8.375" />
+        <EntityTypeShape EntityType="İsTakipModel.SatisUrunler" Width="1.5" PointX="10" PointY="0.75" />
+        <AssociationConnector Association="İsTakipModel.FK_CagriDetay_Cagrilar" />
+        <AssociationConnector Association="İsTakipModel.FK_Mesajlar_Firmalar" />
+        <AssociationConnector Association="İsTakipModel.FK_Mesajlar_Firmalar1" />
+        <AssociationConnector Association="İsTakipModel.FK_SatisUrunler_Firmalar" />
+        <AssociationConnector Association="İsTakipModel.FK_SatisUrunler_Malzemeler" />
+        <AssociationConnector Association="İsTakipModel.FK_SatisUrunler_Personel" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
